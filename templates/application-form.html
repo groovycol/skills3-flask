@@ -1,11 +1,12 @@
 <!doctype html>
+{% extends 'base.html' %}
 <html>
-<head>
-    <title>Skills-Web</title>
-    <link rel="stylesheet" href="/static/styles.css">
+<head>    
+{% block title %}Careers Unlimited{% endblock %}
 </head>
 <body>
-    <h1>Come work with us!</h1>
+    {% block content %}
+    <h2>Come work with us!</h2>
     <div>We take our jobs seriously without taking ourselves too seriously. We want people like you to come help us be awesome! Please fill out this application form:
     </div>
     <br>
@@ -19,12 +20,12 @@
             <input type="text" name="salary"><br><br>
         <label>Please select the job you are interested in: </label>
             <select name="job">
-                <option value="soft-eng">Software Engineer</option>
-                <option value="qa-eng">QA Engineer</option>
-                <option value="prod-man">Product Manager</option>
+                <option value="Software Engineer">Software Engineer</option>
+                <option value="QA Engineer">QA Engineer</option>
+                <option value="Product Manager">Product Manager</option>
             </select><br><br>
         <input type="submit">
     </form>
-
+    {% endblock %}
 </body>
 </html>

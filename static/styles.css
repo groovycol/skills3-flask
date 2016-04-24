@@ -5,6 +5,11 @@ h1 {
     font-family: sans-serif;
 }
 
+h2 {
+    color:black;
+    font-family: sans-serif;
+}
+
 input {
     background-color:yellow;
 }
