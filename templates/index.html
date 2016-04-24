@@ -1,11 +1,14 @@
 <!doctype html>
+{% extends 'base.html' %}
 <html>
-<head>
-    <title>Sample Home Page</title>
-</head>
+    <head>    
+        {% block title %}Careers Unlimited{% endblock %}
+    </head>
 <body>
-
-<h1>This is the sample home page.</h1>
-
+    {% block content %}
+    <h2>Your next career is just a click away!</h2>
+    <a href="/application-form">Go ahead, click here!</a>
+    <br><br>
+    {% endblock %}
 </body>
 </html>
