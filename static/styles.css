@@ -5,7 +5,7 @@ h1, h2 {
     font-family: sans-serif;
 }
 
-p, a {
+#text, #links {
     color:black;
     font-family: sans-serif;
     font-size: large;
@@ -19,7 +19,7 @@ input {
     font-weight:bold;
 }
 
-div {
+#textbox {
     font-family: sans-serif;
     display: block;
     width: 400px;

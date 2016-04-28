@@ -7,19 +7,19 @@
 <body>
     {% block content %}
     <h2>Come work with us!</h2>
-    <div>We take our jobs seriously without taking ourselves too seriously. We want people like you to come help us be awesome! Please fill out this application form:
+    <div id="textbox">We take our jobs seriously without taking ourselves too seriously. We want people like you to come help us be awesome! Please fill out this application form:
     </div>
     <br>
     <br>
     <form action="/application" method="POST">
-        <label>First name: </label>
-            <input type="text" name="first-name"><br><br>
-        <label>Last name: </label>
+        <label for="firstname">First name: </label>
+            <input type="text" id="firstname" name="first-name"><br><br>
+        <label for="lname">Last name: </label>
             <input type="text" name="last-name" id="lname"><br><br>
-        <label>Your salary requirements: </label>
-            <input type="text" name="salary"><br><br>
-        <label>Please select the job you are interested in: </label>
-            <select name="job">
+        <label for="salary">Your salary requirements: </label>
+            <input type="text" id="salary" name="salary"><br><br>
+        <label for="jobtitle">Please select the job you are interested in: </label>
+            <select id="jobtitle" name="job">
                 <option value="Software Engineer">Software Engineer</option>
                 <option value="QA Engineer">QA Engineer</option>
                 <option value="Product Manager">Product Manager</option>
